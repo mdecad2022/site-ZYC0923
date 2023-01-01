@@ -130,7 +130,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='w6.html'>w6</a><li class='has-children'><a href='HW.html'>HW</a><ul class='dropdown'><li><a href='W10.html'>W10</a><li><a href='W11.html'>W11</a><li><a href='W13.html'>W13</a><li class='has-children'><a href='w14.html'>w14</a><ul class='dropdown'><li><a href='NX.html'>NX</a><li><a href='Onshape.html'>Onshape</a><li><a href='Solvespace.html'>Solvespace</a></li></li></ul></ul><li><a href='Brython.html'>Brython</a></li>
+                     <li><a href='About.html'>About</a><li><a href='w6.html'>w6</a><li class='has-children'><a href='HW.html'>HW</a><ul class='dropdown'><li><a href='w10.html'>w10</a><li><a href='w11.html'>w11</a><li><a href='w13.html'>w13</a><li class='has-children'><a href='w14.html'>w14</a><ul class='dropdown'><li><a href='NX.html'>NX</a><li><a href='Onshape.html'>Onshape</a><li><a href='Solvespace.html'>Solvespace</a></li></ul><li><a href='w16.html'>w16</a></li></ul><li><a href='Brython.html'>Brython</a></li>
                       </ul>
                 </nav>
               </div>
@@ -141,202 +141,130 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W11 << <a href='W11.html'>Previous</a> <a href='w14.html'>Next</a> >> w14<br /><h1>W13</h1>
-<p><a href="./../downloads/w13_solvespace.7z">Solvespace</a></p>
-<p>base</p>
-<p>
+    <div id="tipue_search_content">HW << <a href='HW.html'>Previous</a> <a href='w11.html'>Next</a> >> w11<br /><h1>w10</h1>
+<p><button id="w10">w10</button></p>
+<!-- 導入 brython 程式庫 -->
+<script src="./../cmsimde/static/brython.js"></script>
+<script src="./../cmsimde/static/brython_stdlib.js"></script>
+<!-- 啟動 Brython -->
 <script>
-var winkVideoData_w2_1 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
+window.onload=function(){
+brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+}
 </script>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 --></p>
-<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData_w2_1" height="600" muted="true" width="800">
-<source src="./../downloads/base3.mp4" type="video/mp4"/></video></div>
-<p>shaft</p>
+<p><!-- 導入 FileSaver 與 filereader --></p>
 <p>
-<script>
-var winkVideoData_w2_1 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 --></p>
-<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData_w2_1" height="600" muted="true" width="800">
-<source src="./../downloads/shaft3.mp4" type="video/mp4"/></video></div>
-<p>link</p>
+<script src="./../cmsimde/static/ace/FileSaver.min.js" type="text/javascript"></script>
+<script src="./../cmsimde/static/ace/filereader.js" type="text/javascript"></script>
+</p>
+<p><!-- 導入 ace --></p>
 <p>
-<script>
-var winkVideoData_w2_1 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 --></p>
-<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData_w2_1" height="600" muted="true" width="800">
-<source src="./../downloads/link3.mp4" type="video/mp4"/></video></div>
-<p>one_link</p>
+<script src="./../cmsimde/static/ace/ace.js" type="text/javascript"></script>
+<script src="./../cmsimde/static/ace/ext-language_tools.js" type="text/javascript"></script>
+<script src="./../cmsimde/static/ace/mode-python3.js" type="text/javascript"></script>
+<script src="./../cmsimde/static/ace/snippets/python.js" type="text/javascript"></script>
+</p>
+<p><!-- 請注意, 這裡使用 Javascript 將 localStorage["py_src"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
 <p>
-<script>
-var winkVideoData_w2_1 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 --></p>
-<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData_w2_1" height="600" muted="true" width="800">
-<source src="./../downloads/one_link.mp4" type="video/mp4"/></video></div>
-<p></p>
-<p><a href="./../downloads/W13_NX2027.7z">NX2027</a></p>
-<p>link</p>
-<p>
-<script>
-var winkVideoData_w2_1 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData_w2_1" height="600" muted="true" width="800">
-<source src="./../downloads/link.mp4" type="video/mp4"/></video></p>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<p>base</p>
-<p>
-<script>
-var winkVideoData_w2_1 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData_w2_1" height="600" muted="true" width="800">
-<source src="./../downloads/base.mp4" type="video/mp4"/></video></p>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<p>shaft</p>
-<p>
-<script>
-var winkVideoData_w2_1 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData_w2_1" height="600" muted="true" width="800">
-<source src="./../downloads/shaft.mp4" type="video/mp4"/></video></p>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<p></p>
-<p>one_link</p>
-<p>
-<script>
-var winkVideoData_w2_1 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData_w2_1" height="600" muted="true" width="800">
-<source src="./../downloads/one_link_NX.mp4" type="video/mp4"/></video></p>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<p></p>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<p></p>
-<p>Onshape</p>
-<p><a href="https://cad.onshape.com/documents/ddc8202759308efeb50a95a3/w/a8b108b002bd7cebeb9e5fca/e/8d5b1a5d3ba74f8f48bb1885">link</a></p>
-<p>
-<script>
-var winkVideoData_w2_1 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData_w2_1" height="600" muted="true" width="800">
-<source src="./../downloads/link2.mp4" type="video/mp4"/></video></p>
-<p><!-- 接下來將 mp4 檔案從 downloads 目錄取出 --></p>
-<p><a href="https://cad.onshape.com/documents/66614068a3788dfe33411dfc/w/1d59ea32513e6da231e6845d/e/66c2aecc60f3fc1c3ff5f7de">shaft</a></p>
-<p>
-<script>
-var winkVideoData_w2_1 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData_w2_1" height="600" muted="true" width="800">
-<source src="./../downloads/shaft2.mp4" type="video/mp4"/></video></p>
-<p><!-- 接下來將 mp4 檔案從 downloads 目錄取出 --></p>
-<p><a href="https://cad.onshape.com/documents/31cb7bd6f04bf5cea7931864/w/2bc071eb468fa8ded713c34c/e/8b50fa18b598ddc5f05ac276">base</a></p>
-<p><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData_w2_1" height="600" muted="true" width="800">
-<source src="./../downloads/base2.mp4" type="video/mp4"/></video></p>
-<p><!-- 接下來將 mp4 檔案從 downloads 目錄取出 --></p>
-<p><a href="https://cad.onshape.com/documents/5265498532c200f948135112/w/aed1e5ee36abc597cd20c415/e/f901d414aa310b6aa821cbd8">one_link</a></p>
-<p>
-<script>
-var winkVideoData_w2_1 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
+<script type="text/javascript">
+function doSave(storage_id, filename){
+    var blob = new Blob([localStorage[storage_id]], {type: "text/plain;charset=utf-8"});
+    filename = document.getElementById(filename).value
+    saveAs(blob, filename+".py");
+}
 </script>
 </p>
-<p><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData_w2_1" height="600" muted="true" width="800">
-<source src="./../downloads/one_link_onshape.mp4" type="video/mp4"/></video></p>
-<p><a href="https://www.youtube.com/watch?v=zyvnJZ3td-A">CoppeliaSim</a></p>
-<p>one_link_CoppeliaSim</p>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
 <p>
-<script>
-var winkVideoData_w2_1 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
+<script type="text/python3">
+from browser import document as doc
+import ace
+# 清除畫布
+def clear_bd1(ev):
+    bd = doc["brython_div1"]
+    bd.clear()
+Ace1 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
+# 從 gist 取出程式碼後, 放入 editor 作為 default 程式
+def run1():
+    # 利用 get 取下 src 變數值
+    try:
+        url = doc.query["src"]
+    except:
+        url = "https://gist.githubusercontent.com/ZYC0923/3250f2acaf77e80ebf8685b723c7f3b7/raw/dae92e3a96a62165a82914fe07d4644aeeee9c65/w10"
+    prog = open(url).read()
+
+    # 將程式載入編輯區
+    Ace1.editor.setValue(prog)
+    Ace1.editor.scrollToRow(0)
+    Ace1.editor.gotoLine(0)
+    # 直接執行程式
+    #ns = {'__name__':'__main__'}
+    #exec(prog, ns)
+    # 按下 run 按鈕
+    Ace1.run()
+
+# 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
+doc['kw_run1'].bind('click', Ace1.run)
+doc['kw_show_console1'].bind('click', Ace1.show_console)
+doc['kw_clear_console1'].bind('click', Ace1.clear_console)
+doc['clear_bd1'].bind('click', clear_bd1)
+# 呼叫函式執行
+run1()
 </script>
-<video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/cmsimde/static" data-varname="winkVideoData_w2_1" height="600" muted="true" width="800">
-<source src="./../downloads/one_link_coppliasim2.mp4" type="video/mp4"/></video></p>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<p></p><br />W11 << <a href='W11.html'>Previous</a> <a href='w14.html'>Next</a> >> w14</div>
+</p>
+<p><!-- add 1 to 100 開始 -->
+<script type="text/python3">
+from browser import document as doc
+import ace
+
+# 清除畫布
+def clear_bd1(ev):
+    bd = doc["brython_div1"]
+    bd.clear()
+
+# 利用 ace 中的 Editor 建立 Ace 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
+Ace2 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
+
+add1to100_url = "https://gist.githubusercontent.com/mdecycu/9df4b372ac1b7386cf259ced15f1a2b2/raw/fbadccd8fce09ad97db246bfd4538e8a6998099d/cad2022_w10_2b_quiz_result.json"
+
+# 從 gist 取得程式碼
+add_src = open(add1to100_url).read()
+def add(ev):
+    Ace2.editor.setValue(add_src)
+    Ace2.editor.scrollToRow(0)
+    Ace2.editor.gotoLine(0)
+    Ace2.run()
+# id 為 "add1to100" 的按鈕點按時, 執行 add 方法
+doc["add1to100"].bind('click', add)
+</script>
+</p>
+<p><!-- add 1 to 100 結束--></p>
+<!-- editor1 開始 -->
+<p><!-- 用來顯示程式碼的 editor 區域 --></p>
+<div id="kw_editor1" style="width: 600px; height: 300px;"></div>
+<p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
+<p><!-- 存擋表單開始 --></p>
+<form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src1', 'kw_filename1');" type="submit" value="Save"/></form>
+<p><!-- 存擋表單結束 --></p>
+<p></p>
+<p><!-- 執行與清除按鈕開始 --></p>
+<p><button id="kw_run1">Run</button> <button id="kw_show_console1">Output</button> <button id="kw_clear_console1">清除輸出區</button><button id="clear_bd1">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
+<p><!-- 執行與清除按鈕結束 --></p>
+<p></p>
+<p><!-- 程式執行 ouput 區 --></p>
+<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console1"></textarea></div>
+<p><!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 --></p>
+<div id="brython_div1"></div>
+<p><!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 --></p>
+<div id="brython_div2"></div>
+<!-- editor2 結束 -->
+<p><!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
+<script src="./../cmsimde/static/Cango-24v03-min.js"></script>
+<script src="./../cmsimde/static/gearUtils-09.js"></script>
+<script src="./../cmsimde/static/SVGpathUtils-6v03-min.js"></script>
+<script src="./../cmsimde/static/sylvester.js"></script>
+<script src="./../cmsimde/static/PrairieDraw.js"></script>
+</p>
+<br />HW << <a href='HW.html'>Previous</a> <a href='w11.html'>Next</a> >> w11</div>
         
     <!-- footer -->
       <div class="container">
